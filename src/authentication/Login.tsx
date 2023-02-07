@@ -1,7 +1,5 @@
-import PocketBase from 'pocketbase';
+import pb from 'components/pocketbase';
 import { useState } from 'react';
-
-const pb = new PocketBase('http://127.0.0.1:8090');
 
 type Props = {
     setToken: React.Dispatch<React.SetStateAction<any>>;

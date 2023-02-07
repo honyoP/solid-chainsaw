@@ -1,14 +1,10 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PocketBase from 'pocketbase';
-import './App.css'
-import Dashboard from './Dashboard';
-import Login from './authentication/Login'
-import Root from './Root';
-import CharacterSheet from './CharacterSheet';
-
-
-const pb = new PocketBase('http://127.0.0.1:8090');
+import 'App.css'
+import Dashboard from 'Dashboard';
+import Login from 'authentication/Login'
+import Root from 'Root';
+import CharacterSheet from 'CharacterSheet';
 
 function App() {
   const [token, setToken] = useState(JSON.parse(localStorage.getItem('pocketbase_auth')!));
